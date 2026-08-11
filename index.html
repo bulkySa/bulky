@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulky - اشتر أكثر ووفر أكثر</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div><a href="#login">تسجيل الدخول</a> | <a href="#register">إنشاء حساب</a></div>
+      <div class="topbar-actions"><a href="#cart">السلة (<span id="cart-count">0</span>)</a> | <a href="#contact">تتبع الطلب</a></div>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a class="logo" href="#home">
+        <strong>bulky</strong>
+        <small>اشتر أكثر ووفر أكثر</small>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#products">المنتجات</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+
+      <button class="categories-btn">تصفح الأقسام</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <h1>اشتر بالجملة<br>ووفر أكثر</h1>
+        <p>منصة سهلة وموثوقة لشراء المنتجات بكميات كبيرة بأسعار أقل وجودة أعلى.</p>
+
+        <div class="hero-buttons">
+          <a href="#products" class="btn primary">تسوق الآن</a>
+          <a href="#register" class="btn secondary">إنشاء حساب</a>
+        </div>
+
+        <div class="features">
+          <div class="feature"><div class="feature-icon">٪</div><div><strong>أسعار الجملة</strong><small>أسعار أقل للكميات الكبيرة</small></div></div>
+          <div class="feature"><div class="feature-icon">24h</div><div><strong>توصيل سريع</strong><small>لكل مناطق المملكة</small></div></div>
+          <div class="feature"><div class="feature-icon">✓</div><div><strong>منتجات موثوقة</strong><small>جودة مضمونة</small></div></div>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <img src="images/hero.jpg" alt="عربة تسوق وكراتين Bulky">
+      </div>
+    </section>
+
+    <section class="categories container">
+      <h2>تسوق حسب الفئة</h2>
+
+      <div class="category-grid">
+        <article class="category-card"><img src="images/pepsi.webp" alt="Pepsi"><h3>Pepsi - المشروبات</h3></article>
+        <article class="category-card"><img src="images/heinz.webp" alt="Heinz"><h3>Heinz - المواد الغذائية</h3></article>
+        <article class="category-card"><img src="images/tide.jpg" alt="Tide"><h3>Tide - المنظفات</h3></article>
+        <article class="category-card"><img src="images/nivea.webp" alt="NIVEA"><h3>NIVEA - العناية الشخصية</h3></article>
+        <article class="category-card"><img src="images/fine.webp" alt="Fine"><h3>Fine - المناديل والورق</h3></article>
+        <article class="category-card"><img src="images/oreo.webp" alt="Oreo"><h3>Oreo - المزيد</h3></article>
+      </div>
+    </section>
+
+    <section class="stats container">
+      <div class="stat"><strong>وفر حتى 40%</strong><small>عند الشراء بالجملة</small></div>
+      <div class="stat"><strong>+1000</strong><small>طلب تم توصيله</small></div>
+      <div class="stat"><strong>+2000</strong><small>منتج متوفر</small></div>
+      <div class="stat"><strong>+5000</strong><small>عميل نشط</small></div>
+    </section>
+
+    <section class="products container" id="products">
+      <h2>منتجات مميزة</h2>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <span class="badge">خصم 20%</span>
+          <img src="images/pepsi.webp" alt="Pepsi 24 cans">
+          <h3>Pepsi - كرتون 24 علبة</h3>
+          <p class="quantity">الكمية: 24 × 330 مل</p>
+          <p class="price">72 ر.س</p>
+          <button class="add-to-cart" data-name="Pepsi - كرتون 24 علبة" data-price="72">أضف للسلة</button>
+        </article>
+
+        <article class="product-card">
+          <span class="badge">الأكثر مبيعاً</span>
+          <img src="images/fine.webp" alt="Fine Classic tissues">
+          <h3>Fine Classic - مناديل</h3>
+          <p class="quantity">الكمية: 10 علب × 100 منديل</p>
+          <p class="price">49 ر.س</p>
+          <button class="add-to-cart" data-name="Fine Classic - 10 علب" data-price="49">أضف للسلة</button>
+        </article>
+
+        <article class="product-card">
+          <span class="badge">عرض خاص</span>
+          <img src="images/tide.jpg" alt="Tide detergent 2.5L">
+          <h3>Tide - جل غسيل 2.5 لتر</h3>
+          <p class="quantity">الكمية: 2 عبوة</p>
+          <p class="price">78.50 ر.س</p>
+          <button class="add-to-cart" data-name="Tide - عبوتان 2.5 لتر" data-price="78.5">أضف للسلة</button>
+        </article>
+
+        <article class="product-card">
+          <span class="badge">جديد</span>
+          <img src="images/heinz.webp" alt="Heinz Tomato Ketchup">
+          <h3>Heinz - كاتشب طماطم</h3>
+          <p class="quantity">الكمية: 6 عبوات × 1 كجم</p>
+          <p class="price">89 ر.س</p>
+          <button class="add-to-cart" data-name="Heinz Ketchup - 6 عبوات" data-price="89">أضف للسلة</button>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="register-section" id="register">
+      <div class="container">
+        <div class="form-card">
+          <h2>إنشاء حساب</h2>
+          <p>أنشئ حسابك في Bulky وابدأ التسوق بالجملة.</p>
+          <form id="register-form">
+            <div class="form-grid">
+              <div>
+                <label for="name">الاسم</label>
+                <input id="name" type="text" required placeholder="اكتب اسمك">
+              </div>
+              <div>
+                <label for="email">البريد الإلكتروني</label>
+                <input id="email" type="email" required placeholder="name@example.com">
+              </div>
+              <div>
+                <label for="phone">رقم الجوال</label>
+                <input id="phone" type="tel" required placeholder="05XXXXXXXX">
+              </div>
+              <div>
+                <label for="password">كلمة المرور</label>
+                <input id="password" type="password" required minlength="6" placeholder="6 أحرف أو أكثر">
+              </div>
+            </div>
+            <button type="submit" class="submit-btn">تسجيل</button>
+            <p id="register-message" class="form-message"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="cart-section" id="cart">
+      <div class="container">
+        <div class="cart-card">
+          <h2>سلة التسوق</h2>
+          <div id="cart-items">
+            <p class="empty-cart">السلة فارغة حالياً.</p>
+          </div>
+          <div class="cart-total">الإجمالي: <strong><span id="cart-total">0</span> ر.س</strong></div>
+          <button id="clear-cart" type="button">إفراغ السلة</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <img src="images/hero.jpg" alt="Bulky">
+        <div>
+          <h2>عن Bulky</h2>
+          <p>Bulky فكرة متجر إلكتروني تساعد الأفراد والعائلات وأصحاب الأعمال الصغيرة على شراء احتياجاتهم بكميات كبيرة وبأسعار جملة، مع تجربة سهلة وتوصيل سريع.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <h2>Bulky</h2>
+      <p>منصتك الذكية للتسوق بالجملة وتوفير أكثر.</p>
+      <p>info@bulky.sa | +966 50 000 0000</p>
+      <p>© 2026 جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
